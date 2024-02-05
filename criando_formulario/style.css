@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #535971;
+  height: 436px;
+  width: 100%;
+}
+
+body {
+  background-color: #EFEFEF;
+  font-family: 'Poppins', sans-serif;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  color: white;
+}
+
+header h1 {
+  margin-top: 140px;
+  font-size: 48px;
+  font-weight: normal;
+  font-family: 'Staatliches', sans-serif;
+}
+
+header p {
+  font-size: 20px;
+  width: 417px;
+  margin-top: 18px;
+}
+
+form {
+  margin-top: 58px;
+  border-radius: 8px 8px 0 0;
+  padding: 64px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+fieldset legend {
+  font-family: 'Staatliches', sans-serif;
+  color: #535971;
+  font-size: 24px;
+  border-bottom: 1px solid #E6E6F0;
+  width: 100%;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+
+.col-name {
+  display: flex;
+  gap: 22px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-wrapper label {
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  color: #C1BCCC;
+  margin-left: 9px;
+}
+
+.input-wrapper label span:hover {
+  color: #646464;
+}
+
+.input-wrapper input {
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background-color: #FAFAFC;
+  height: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+fieldset h2 {
+  font-size: 20px;
+  line-height: 34px;
+  color: #535971;
+  font-family: 'Staatliches', sans-serif;
+  font-weight: normal;
+}
+
+.date-col {
+  display: flex;
+  gap: 32px;
+}
+
+.date-col .hour-col {
+  display: flex;
+  gap: 10px
+}
+
+footer {
+  background-color: #535971;
+  border-radius: 0 0 8px 8px;
+  padding: 52px 71px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 366px;
+}
+
+footer #button-save {
+  color: white;
+  border-radius: 20px;
+  border: none;
+  background-color: #FF5374;
+  height: 56px;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#button-save:hover {
+  background-color: #cd3755;
+}
+
+input:invalid {
+  outline: solid 1px #FF5374;
+}
